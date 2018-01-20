@@ -1,6 +1,9 @@
 # NTP_DDoS_Python
 ###### Script para generar una botnet con la que realizar un ataque DDoS mediante amplificación NTP
 
+Importante: Este script es un proyecto de investigación universitario, pensado para realizar el análisis de los efectos de un ataque DDoS en un entorno totalmente controlado. El autor del script no se hace en ningún caso responsable del mal uso que se haga del mismo.
+
+
 Para utilizar el script (desde un sistema UNIX, al que nos referiremos como C&C), rellenar el fichero attackers.txt con las IPs y credenciales de los sistemas atacantes (también UNIX, con acceso SSH) y el fichero NTP_Servers.txt con las IP de los servidores NTP abiertos (que responden a la petición "monlist"). El directorio bittwist-linux-2.0 debe tener dentro el código compilado de Bittwist*.
 
 *Los atacantes deberán tener la misma arquitectura (32 o 64 bits). Por defecto, funcionará para 32 bits. Si se quieren utilizar atacantes de 64 bits, se deberá descargar el código de Bittwist (http://bittwist.sourceforge.net/) y compilarlo (make) en un sistema con dicha arquitectura, sin necesidad de instalarlo (make install). Las arquitecturas de la víctima y de los servidores no son relevantes.
